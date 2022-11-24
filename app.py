@@ -23,7 +23,7 @@ def reg_to_cont(df):
     df.replace(("C.W. OF IND. STATES", "BALTICS"), "FORMER USSR", inplace=True, regex=True)
     return(df)
 
-url = "https://github.com/korsiee/Ceccarelli_Homework/blob/main/countries.csv"
+url = "https://raw.githubusercontent.com/korsiee/Ceccarelli_Homework/main/countries.csv"
 data = pd.read_csv(url, decimal=",").dropna()
 
 @st.cache
